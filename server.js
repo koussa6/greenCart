@@ -12,7 +12,7 @@ import orderRouter from './routes/orderRoutes.js';
 import productRouter from './routes/productRoutes.js';
 
 const app = express();
-const allowedOrigins = ['http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5174'];
 await connectDb();
 await connectCloudinary();
 app.use(cors({ origin: allowedOrigins, credentials: true }));
